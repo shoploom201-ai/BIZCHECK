@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>시급으로 월급 계산하기 · 209시간의 의미 (2026년) — 간편 근퇴관리</title>
+  <meta name="description" content="월급 계산에 쓰는 209시간은 어디서 나올까요? 2026년 최저임금 월 환산액, 단시간 근로자 월급 계산, 월급을 시급으로 바꾸는 법을 계산기와 함께 정리했습니다.">
+  <meta name="theme-color" content="#2449a8">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+  <!-- adsense:start --><!-- adsense:end -->
+</head>
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header class="site-head"><div class="wrap">
+    <a class="logo" href="index.html"><img src="icon.svg" alt="">간편 근퇴관리</a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="guide-howto.html">사용법</a>
+      <a href="guides.html">가이드 모음</a>
+      <a href="guide-juhyu.html">주휴수당</a>
+      <a href="guide-overtime.html">가산수당</a>
+      <a href="guide-monthly-wage.html" aria-current="page">월급 계산</a>
+      <a class="cta" href="app.html">프로그램 시작</a>
+    </nav>
+  </div></header>
+
+  <main id="main" class="wrap">
+    <p class="crumb"><a href="index.html">홈</a> › 급여 계산 가이드</p>
+    <article class="post">
+      <div class="post-head">
+        <h1>시급으로 월급 계산하기</h1>
+        <p class="summary">주 40시간 일하는 직원의 월급은 시급 × 209시간입니다. 209시간이 어떻게 나오는지 알면 단시간 직원 월급도, 월급을 시급으로 바꾸는 것도 쉽게 계산할 수 있습니다.</p>
+        <p class="byline">2026년 최저임금(시급 10,320원) 기준 · 2026년 11월 작성</p>
+      </div>
+
+      <nav class="toc" aria-label="목차"><strong>목차</strong>
+        <ol>
+          <li><a href="#209">209시간은 어디서 나올까</a></li>
+          <li><a href="#minwage">2026년 최저임금 월 환산액</a></li>
+          <li><a href="#calc">월급 계산기</a></li>
+          <li><a href="#reverse">월급을 시급으로 바꾸기</a></li>
+          <li><a href="#deduct">결근·지각이 있을 때</a></li>
+        </ol>
+      </nav>
+
+      <div class="ad-slot" data-slot hidden></div>
+
+      <h2 id="209">209시간은 어디서 나올까</h2>
+      <p>월급은 "한 달 동안 임금을 받는 시간"에 시급을 곱한 것입니다. 이 시간에는 실제로 일한 시간과 유급 주휴시간이 함께 들어갑니다.</p>
+      <div class="formula">1주 유급시간 = 소정근로 40시간 + 주휴 8시간 = 48시간<br>한 달 평균 주 수 = 365일 ÷ 7일 ÷ 12개월 ≈ 4.345주<br>월 유급시간 = 48 × 4.345 ≈ 208.6 → 209시간</div>
+      <p>달마다 일수가 다르지만 월급은 매달 같아야 하므로 1년 평균을 씁니다. 그래서 2월처럼 짧은 달이든 31일까지 있는 달이든 월급은 같습니다.</p>
+
+      <h2 id="minwage">2026년 최저임금 월 환산액</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>연도</th><th class="num">시급</th><th class="num">월 환산 (209시간)</th></tr></thead>
+        <tbody>
+          <tr><td>2024년</td><td class="num">9,860원</td><td class="num">2,060,740원</td></tr>
+          <tr><td>2025년</td><td class="num">10,030원</td><td class="num">2,096,270원</td></tr>
+          <tr><td><strong>2026년</strong></td><td class="num"><strong>10,320원</strong></td><td class="num"><strong>2,156,880원</strong></td></tr>
+        </tbody>
+      </table></div>
+      <p>주 40시간 일하는 직원에게 기본급으로 이보다 적게 주면 최저임금 위반입니다. 식대·교통비 같은 복리후생비는 2024년부터 전액 최저임금에 포함되지만, 연장·야간·휴일수당은 포함되지 않습니다.</p>
+
+      <div class="ad-slot" data-slot hidden></div>
+
+      <h2 id="calc">월급 계산기</h2>
+      <form class="calc" data-calc="monthly">
+        <h3>시급 → 월 기본급</h3>
+        <div class="grid">
+          <label>시급 (원)<input type="number" name="wage" value="10320" min="0" step="10" inputmode="numeric"></label>
+          <label>1주 소정근로시간<input type="number" name="hours" value="40" min="0" step="0.5" inputmode="decimal"></label>
+        </div>
+        <output aria-live="polite"></output>
+      </form>
+      <div class="example"><span class="label">단시간 근로자 예시</span>
+        <p>시급 10,320원, 주 20시간 → 주휴 4시간 포함 1주 24시간</p>
+        <p>24 × 4.345 ≈ 104시간 → 월 <strong>1,073,280원</strong></p>
+      </div>
+      <p>1주 소정근로가 15시간 미만이면 주휴시간이 없으므로 일한 시간 × 4.345만 계산합니다.</p>
+
+      <h2 id="reverse">월급을 시급으로 바꾸기</h2>
+      <p>반대로 월급제 직원의 시급(통상시급)을 알고 싶을 때는 월급을 월 유급시간으로 나눕니다. 연장수당을 계산하거나 최저임금 위반인지 확인할 때 이 값을 씁니다.</p>
+      <div class="formula">통상시급 = 월 통상임금 ÷ 209시간  (주 40시간 기준)</div>
+      <div class="example"><span class="label">예시</span>
+        <p>월급 2,500,000원 → 2,500,000 ÷ 209 ≈ <strong>11,962원</strong></p>
+        <p>이 직원이 한 달에 연장근로 10시간을 했다면 11,962 × 1.5 × 10 ≈ 179,430원을 더 받습니다.</p>
+      </div>
+
+      <h2 id="deduct">결근·지각이 있을 때</h2>
+      <h3>시급제</h3>
+      <p>실제로 일한 시간만큼만 계산하므로 별도 공제가 필요 없습니다. 결근한 주는 개근이 아니므로 그 주 주휴수당이 빠집니다.</p>
+      <h3>월급제</h3>
+      <p>결근한 날의 하루치 임금(통상시급 × 1일 소정근로시간)을 뺄 수 있고, 그 주가 개근이 아니게 되므로 주휴일 하루치도 뺄 수 있습니다. 지각·조퇴는 못 일한 시간만큼만 뺄 수 있습니다.</p>
+      <div class="warn"><p>지각 한 번에 "벌금 3만 원"처럼 정해진 금액을 떼는 것은 감급 제재에 해당합니다. 취업규칙에 근거가 있어야 하고, 1회 금액이 평균임금 하루치의 절반, 한 달 총액이 월급의 10분의 1을 넘으면 안 됩니다(근로기준법 제95조).</p></div>
+
+      <div class="ad-slot" data-slot hidden></div>
+      <div class="cta-box">
+        <div><strong>시급제·월급제 직원을 한 화면에서</strong><p>간편 근퇴관리는 직원마다 시급제와 월급제를 고르고, 최저임금보다 낮으면 경고해 줍니다.</p></div>
+        <a class="btn" href="app.html">프로그램 시작</a>
+      </div>
+
+      <p class="disclaimer">이 글은 2026년 11월 기준 근로기준법과 최저임금법을 바탕으로 정리한 일반 정보이며 법률 자문이 아닙니다. 근거 법령: <a href="https://www.law.go.kr/법령/최저임금법시행령/제5조" rel="noopener">최저임금법 시행령 제5조(임금의 환산)</a> · <a href="https://www.law.go.kr/법령/근로기준법/제95조" rel="noopener">근로기준법 제95조(제재 규정의 제한)</a> · <a href="https://www.law.go.kr/법령/근로기준법/제55조" rel="noopener">제55조(휴일)</a>. 수습기간 감액, 포괄임금 계약 등 개별 사안은 고용노동부 고객상담센터(국번 없이 1350)나 공인노무사에게 확인하세요.</p>
+
+      <section class="related">
+        <h2>함께 보면 좋은 글</h2>
+        <div class="cards">
+          <a class="card" href="guide-juhyu.html"><strong>주휴수당 계산법</strong><span>주 15시간 기준과 개근 조건</span></a>
+          <a class="card" href="guide-overtime.html"><strong>연장·야간·휴일수당 계산법</strong><span>1.5배·2배가 붙는 경우와 겹칠 때 계산</span></a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-foot"><div class="wrap">
+    <nav aria-label="사이트 정보">
+      <a href="index.html">소개</a>
+      <a href="guide-howto.html">사용법</a>
+      <a href="guides.html">가이드 모음</a>
+      <a href="guide-juhyu.html">주휴수당</a>
+      <a href="guide-overtime.html">가산수당</a>
+      <a href="guide-monthly-wage.html">월급 계산</a>
+      <a href="about.html">운영자 소개·문의</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+    <p>간편 근퇴관리는 소규모 사업장을 위한 무료 도구입니다. 계산 결과와 가이드는 참고용이며 법률 자문이 아닙니다.</p>
+  </div></footer>
+  <script src="js/calc.js"></script>
+  <script src="js/ads.js"></script>
+</body>
+</html>

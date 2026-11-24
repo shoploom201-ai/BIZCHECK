@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>퇴직금 계산법과 지급 조건 (2026년) — 간편 근퇴관리</title>
+  <meta name="description" content="퇴직금은 누가, 얼마나 받을까요? 1년·주 15시간 조건, 평균임금 계산, 상여금과 연차수당 포함 방법, 14일 지급 기한, 5인 미만 사업장 적용 여부를 계산기와 함께 정리했습니다.">
+  <meta name="theme-color" content="#2449a8">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+  <!-- adsense:start --><!-- adsense:end -->
+</head>
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header class="site-head"><div class="wrap">
+    <a class="logo" href="index.html"><img src="icon.svg" alt="">간편 근퇴관리</a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="guide-howto.html">사용법</a>
+      <a href="guides.html">가이드 모음</a>
+      <a href="guide-juhyu.html">주휴수당</a>
+      <a href="guide-overtime.html">가산수당</a>
+      <a href="guide-monthly-wage.html">월급 계산</a>
+      <a class="cta" href="app.html">프로그램 시작</a>
+    </nav>
+  </div></header>
+
+  <main id="main" class="wrap">
+    <p class="crumb"><a href="index.html">홈</a> › <a href="guides.html">가이드 모음</a> › 계약·퇴직</p>
+    <article class="post">
+      <div class="post-head">
+        <h1>퇴직금 계산법과 지급 조건</h1>
+        <p class="summary">1년 이상, 주 15시간 이상 일한 직원이 그만두면 퇴직금을 줘야 합니다. 평균임금으로 계산하는 방법과 지급 기한을 정리했습니다.</p>
+        <p class="byline">근로자퇴직급여 보장법 기준 · 2026년 11월 작성</p>
+      </div>
+
+      <nav class="toc" aria-label="목차"><strong>목차</strong>
+        <ol>
+          <li><a href="#who">퇴직금을 받는 조건</a></li>
+          <li><a href="#formula">계산 공식</a></li>
+          <li><a href="#calc">퇴직금 계산기</a></li>
+          <li><a href="#example">계산 예시</a></li>
+          <li><a href="#deadline">지급 기한과 주의할 점</a></li>
+        </ol>
+      </nav>
+
+      <div class="ad-slot" data-slot hidden></div>
+<h2 id="who">퇴직금을 받는 조건</h2>
+      <p>다음 두 가지를 모두 충족한 직원이 퇴사하면 퇴직금을 줘야 합니다. 정규직, 계약직, 아르바이트를 가리지 않습니다.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>조건</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>계속근로기간 1년 이상</td><td>입사일부터 퇴사일까지 끊김 없이 1년 이상. 중간에 계약을 다시 써도 공백 없이 이어졌다면 합산합니다.</td></tr>
+          <tr><td>4주 평균 주 15시간 이상</td><td>4주 동안 평균한 1주 소정근로시간이 15시간 이상이어야 합니다.</td></tr>
+        </tbody>
+      </table></div>
+      <div class="keypoint"><p><strong>5인 미만 사업장도 퇴직금을 줘야 합니다.</strong></p><p>2010년 12월부터 단계적으로 적용되어 2013년부터는 모든 사업장에 100% 적용됩니다.</p></div>
+
+      <h2 id="formula">계산 공식</h2>
+      <div class="formula">1일 평균임금 = 퇴직 전 3개월 임금 총액 ÷ 그 3개월의 총 일수<br>퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365)</div>
+      <ul>
+        <li><strong>3개월 임금 총액</strong>: 기본급, 연장·야간·휴일수당, 주휴수당 등 그 기간에 받은 임금 전부입니다.</li>
+        <li><strong>상여금</strong>: 퇴직 전 1년 동안 받은 상여금의 3/12을 더합니다.</li>
+        <li><strong>연차수당</strong>: 퇴직 전 1년 사이에 지급된 연차수당의 3/12을 더합니다.</li>
+        <li><strong>총 일수</strong>: 달력상 일수(89~92일)입니다. 주말도 포함합니다.</li>
+      </ul>
+      <p>평균임금이 통상임금보다 적으면 통상임금을 평균임금으로 봅니다. 예를 들어 퇴직 직전 석 달 동안 병가 등으로 임금이 크게 줄었다면 이 규정 덕분에 퇴직금이 지나치게 줄지 않습니다.</p>
+
+      <h2 id="calc">퇴직금 계산기</h2>
+      <form class="calc" data-calc="severance">
+        <h3>예상 퇴직금</h3>
+        <div class="grid">
+          <label>입사일<input type="date" name="hire" value="2023-03-02"></label>
+          <label>마지막 근무일<input type="date" name="last" value="2026-11-30"></label>
+          <label>퇴직 전 3개월 임금 합계 (원)<input type="number" name="wage3" value="6600000" min="0" step="10000" inputmode="numeric"></label>
+          <label>최근 1년 상여금 합계 (원)<input type="number" name="bonus" value="0" min="0" step="10000" inputmode="numeric"></label>
+          <label>최근 1년 연차수당 (원)<input type="number" name="leavePay" value="0" min="0" step="10000" inputmode="numeric"></label>
+        </div>
+        <output aria-live="polite"></output>
+      </form>
+
+      <div class="ad-slot" data-slot hidden></div>
+
+      <h2 id="example">계산 예시</h2>
+      <div class="example"><span class="label">예시</span>
+        <p>월급 220만 원, 상여금 없음, 2023년 3월 2일 입사, 2026년 11월 30일 마지막 근무</p>
+        <p>3개월(9월 1일~11월 30일, 91일) 임금 660만 원 ÷ 91일 = 1일 평균임금 약 72,527원</p>
+        <p>재직일수 1,370일 → 72,527 × 30 × 1,370 ÷ 365 ≈ <strong>8,166,800원</strong></p>
+      </div>
+
+      <h2 id="deadline">지급 기한과 주의할 점</h2>
+      <ul>
+        <li><strong>퇴직일로부터 14일 안에</strong> 줘야 합니다. 당사자가 합의하면 기한을 늦출 수 있습니다.</li>
+        <li>늦게 주면 그다음 날부터 연 20%의 지연이자가 붙고, 체불로 처벌받을 수 있습니다.</li>
+        <li>"퇴직금을 월급에 포함해서 준다"는 약정은 원칙적으로 무효입니다. 매달 나눠 줬어도 퇴사 때 퇴직금을 다시 청구당할 수 있습니다.</li>
+        <li>퇴직금에서는 퇴직소득세가 원천징수됩니다. 근속연수가 길수록 공제가 커서 실제 세금은 많지 않은 편입니다.</li>
+      </ul>
+      <div class="warn"><p>퇴직 직전에 근무시간을 일부러 줄이거나 쪼개기 계약으로 1년을 피하는 방식은 분쟁에서 인정되지 않는 경우가 많습니다. 계약 기간 사이에 공백이 짧으면 계속근로로 볼 수 있습니다.</p></div>
+
+      <div class="ad-slot" data-slot hidden></div>
+      <div class="cta-box">
+        <div><strong>퇴직금 계산에 필요한 3개월 임금, 바로 꺼내 보세요</strong><p>간편 근퇴관리는 월별 급여대장과 명세서를 엑셀로 남겨 두므로, 퇴직 직전 3개월 임금을 쉽게 확인할 수 있습니다.</p></div>
+        <a class="btn" href="app.html">프로그램 시작</a>
+      </div>
+
+      <p class="disclaimer">이 글은 2026년 11월 기준 법령과 고용노동부 자료를 바탕으로 정리한 일반 정보이며 법률 자문이 아닙니다. 근거 법령: <a href="https://www.law.go.kr/법령/근로자퇴직급여보장법/제4조" rel="noopener">근로자퇴직급여 보장법 제4조(퇴직급여제도의 설정)</a> · <a href="https://www.law.go.kr/법령/근로자퇴직급여보장법/제8조" rel="noopener">제8조(퇴직금제도의 설정 등)</a> · <a href="https://www.law.go.kr/법령/근로자퇴직급여보장법/제9조" rel="noopener">제9조(퇴직금의 지급 등)</a> · <a href="https://www.law.go.kr/법령/근로기준법/제2조" rel="noopener">근로기준법 제2조(평균임금 정의)</a>. 개별 사안은 고용노동부 고객상담센터(국번 없이 1350)나 공인노무사에게 확인하세요.</p>
+
+      <section class="related">
+        <h2>함께 보면 좋은 글</h2>
+        <div class="cards">
+          <a class="card" href="guide-annual-leave.html"><strong>연차휴가 계산법과 연차수당</strong><span>입사 1년 미만은 매달 1일, 1년이 지나면 15일, 3년차부터 2년마다 1일씩 늘어납니다. 언제 몇 일이 생기는지, 못 쓴 연차는 어떻게 되는지 정리했습니다.</span></a>
+          <a class="card" href="guide-dismissal-notice.html"><strong>해고예고와 해고예고수당</strong><span>직원을 해고하려면 30일 전에 알리거나, 그러지 못했다면 30일분 통상임금을 해고예고수당으로 줘야 합니다. 5인 미만 사업장도 적용됩니다.</span></a>
+          <a class="card" href="guide-contract.html"><strong>근로계약서 작성법과 필수 기재사항</strong><span>아르바이트 한 명을 써도 근로계약서는 꼭 써서 한 부를 줘야 합니다. 반드시 들어가야 할 항목과 자주 틀리는 부분을 정리했습니다.</span></a>
+          <a class="card" href="guide-monthly-wage.html"><strong>시급으로 월급 계산하기</strong><span>209시간의 의미와 2026년 최저임금 월 환산액</span></a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-foot"><div class="wrap">
+    <nav aria-label="사이트 정보">
+      <a href="index.html">소개</a>
+      <a href="guide-howto.html">사용법</a>
+      <a href="guides.html">가이드 모음</a>
+      <a href="guide-juhyu.html">주휴수당</a>
+      <a href="guide-overtime.html">가산수당</a>
+      <a href="guide-monthly-wage.html">월급 계산</a>
+      <a href="about.html">운영자 소개·문의</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+    <p>간편 근퇴관리는 소규모 사업장을 위한 무료 도구입니다. 계산 결과와 가이드는 참고용이며 법률 자문이 아닙니다.</p>
+  </div></footer>
+  <script src="js/calc.js"></script>
+  <script src="js/ads.js"></script>
+</body>
+</html>

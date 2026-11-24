@@ -1,0 +1,13 @@
+# Cloudflare Pages 헤더 설정: 소스 파일은 검색 노출 제외
+/content/*
+  X-Robots-Tag: noindex
+/tools/*
+  X-Robots-Tag: noindex
+/tests/*
+  X-Robots-Tag: noindex
+/README.md
+  X-Robots-Tag: noindex
+/app.html
+  X-Robots-Tag: noindex
+/sw.js
+  Cache-Control: no-cache
