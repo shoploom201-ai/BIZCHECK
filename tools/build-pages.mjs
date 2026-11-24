@@ -56,7 +56,8 @@ const pages = readdirSync(root).filter(n => n.endsWith('.html') && !NOINDEX.has(
 const sitemapPath = join(root, 'sitemap.xml');
 if (siteUrl) {
   const urls = pages.map(f => {
-    const loc = f === 'index.html' ? `${siteUrl}/` : `${siteUrl}/${f}`;
+    // Cloudflare Pages·Netlify 는 /x.html → /x 로 리디렉트하므로 최종 주소(.html 없음)를 씁니다
+    const loc = f === 'index.html' ? `${siteUrl}/` : `${siteUrl}/${f.replace(/\.html$/, '')}`;
     const lastmod = statSync(join(root, f)).mtime.toISOString().slice(0, 10);
     const pri = f === 'index.html' ? '1.0' : f === 'guides.html' ? '0.9' : f.startsWith('guide-') ? '0.8' : '0.5';
     return `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod><priority>${pri}</priority></url>`;
@@ -66,7 +67,7 @@ if (siteUrl) {
   unlinkSync(sitemapPath);
 }
 writeFileSync(join(root, 'robots.txt'),
-  `User-agent: *\nAllow: /\nDisallow: /app.html\n${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ''}`);
+  `User-agent: *\nAllow: /\nDisallow: /app\n${siteUrl ? `\nSitemap: ${siteUrl}/sitemap.xml\n` : ''}`);
 console.log(siteUrl
   ? `sitemap.xml (${pages.length}개 페이지), robots.txt 생성 — ${siteUrl}`
   : 'robots.txt 생성 (site.config.json 에 siteUrl 을 넣으면 sitemap.xml 도 만들어집니다)');
